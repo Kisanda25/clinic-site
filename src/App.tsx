@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 export default function App(): JSX.Element {
   return (
-    <>
+    <div className="bg-gray-50">
       <Hero />
       <About />
       <Services />
@@ -16,6 +16,6 @@ export default function App(): JSX.Element {
       <WhyUs />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }

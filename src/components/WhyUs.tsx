@@ -1,8 +1,21 @@
 export default function WhyUs(): JSX.Element {
+  const points = [
+    "Experienced medical staff",
+    "Affordable services",
+    "Fast & reliable care",
+    "Convenient location",
+  ];
+
   return (
-    <section className="bg-green-700 text-white py-16 text-center">
-      <h2 className="text-3xl font-bold">Why Choose Us</h2>
-      <p className="mt-4">Affordable, professional, and reliable care.</p>
+    <section className="bg-green-700 text-white py-20 text-center">
+      <h2 className="text-4xl font-bold mb-10">Why Choose Us</h2>
+      <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto px-6">
+        {points.map((point) => (
+          <div key={point} className="bg-white/10 p-6 rounded-xl">
+            {point}
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
